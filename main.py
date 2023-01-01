@@ -13,13 +13,13 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 download_path = "Downloads/"
 
-api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token =os.environ.get("BOT_TOKEN")
+api_id = int(os.environ.get("API_ID","6534707"))
+api_hash = os.environ.get("API_HASH","4bcc61d959a9f403b2f20149cbbe627a")
+bot_token =os.environ.get("BOT_TOKEN","5442493323:AAHPw8TNe0hh2zCAQKm_2O2o6KdmQ3Okgf8")
 
 class Config:
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS","1430593323").split())
     TIMEOUT = 0
     MAX_SIZE = 9 * 1024 * 1024 * 1024
     CUSTOM_THUMB = None
