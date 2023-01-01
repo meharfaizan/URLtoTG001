@@ -11,7 +11,7 @@ logging.basicConfig(
 LOGGER = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-download_path = "Downloads/"
+download_path = "./DOWNLOADS"
 
 api_id = int(os.environ.get("API_ID","6534707"))
 api_hash = os.environ.get("API_HASH","4bcc61d959a9f403b2f20149cbbe627a")
